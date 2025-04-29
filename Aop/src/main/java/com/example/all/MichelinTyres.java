@@ -1,31 +1,16 @@
 package com.example.all;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component 
+@Component
+public class MichelinTyres  implements Tyres{
+	public String rotate() {
+		return "Michelin tyres are working properly";
+	}
 
-public class MichelinTyres implements Tyre{ 
-
- 
-
-
-
-    public String rotate(){ 
-
-        return "Vehicle moving with the help of BridgeStone tyres"; 
-
-    } 
-
- 
-
-    @Override 
-
-    public String stop() { 
-
-        return "Vehicle stopped with the help of BridgeStone tyres"; 
-
-    } 
-
- 
-
-} 
+	@Override
+	public String stop() {
+		return "MichelinTyres are stopped";
+	}
+}

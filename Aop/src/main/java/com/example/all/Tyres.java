@@ -1,6 +1,6 @@
 package com.example.all;
 
-public interface Tyre {
+public interface Tyres {
 	
 	public String rotate(); 
 
